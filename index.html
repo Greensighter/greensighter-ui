@@ -1,14 +1,171 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Untitled</title>
+    <title>Greensighter UI</title>
+    <link rel="stylesheet" href="css/tokens.css">
+    <style>
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--gs-bg-canvas);
+        color: var(--gs-text-primary);
+        font-family: var(--gs-font-family-body);
+        font-size: var(--gs-font-size-sm);
+        line-height: var(--gs-font-line-height-sm);
+      }
+      main { max-width: 1160px; margin: 0 auto; padding: var(--gs-spacing-48) var(--gs-spacing-16) var(--gs-spacing-96); }
+      header { display: flex; flex-wrap: wrap; gap: var(--gs-spacing-16); align-items: end; justify-content: space-between; margin-bottom: var(--gs-spacing-48); }
+      header p { margin: var(--gs-spacing-8) 0 0; color: var(--gs-text-secondary); }
+      h1, h2, h3 { margin: 0; }
+      section { margin-top: var(--gs-spacing-64); }
+      section > p { color: var(--gs-text-secondary); max-width: 720px; margin: var(--gs-spacing-8) 0 var(--gs-spacing-24); }
+      h3 { margin: var(--gs-spacing-32) 0 var(--gs-spacing-12); color: var(--gs-text-secondary); text-transform: capitalize; }
+      code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; color: var(--gs-text-secondary); overflow-wrap: anywhere; }
+
+      .toggle { display: inline-flex; padding: var(--gs-spacing-4); border-radius: var(--gs-radius-full); background: var(--gs-bg-surface); border: 1px solid var(--gs-border-subtle); }
+      .toggle button { font: inherit; border: 0; cursor: pointer; padding: var(--gs-spacing-8) var(--gs-spacing-16); border-radius: var(--gs-radius-full); background: transparent; color: var(--gs-text-secondary); }
+      .toggle button[aria-pressed="true"] { background: var(--gs-bg-accent); color: var(--gs-text-on-accent); }
+      .toggle button:focus-visible { outline: 2px solid var(--gs-border-accent); outline-offset: 2px; }
+
+      .grid { display: grid; gap: var(--gs-spacing-12); grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+      .swatch { border-radius: var(--gs-radius-lg); background: var(--gs-bg-surface); border: 1px solid var(--gs-border-subtle); overflow: hidden; }
+      .swatch .chip { height: 72px; border-bottom: 1px solid var(--gs-border-subtle); background-image: linear-gradient(45deg, var(--gs-color-gray-500) 25%, transparent 25%, transparent 75%, var(--gs-color-gray-500) 75%); background-size: 12px 12px; }
+      .swatch .chip > div { height: 100%; }
+      .swatch .meta { padding: var(--gs-spacing-8) var(--gs-spacing-12) var(--gs-spacing-12); display: grid; gap: 2px; }
+
+      .type-row { display: grid; grid-template-columns: 160px 1fr; gap: var(--gs-spacing-24); align-items: baseline; padding: var(--gs-spacing-20) 0; border-top: 1px solid var(--gs-border-subtle); }
+      .type-row .sample { overflow-wrap: anywhere; }
+      @media (max-width: 640px) { .type-row { grid-template-columns: 1fr; gap: var(--gs-spacing-8); } }
+
+      .bar-row { display: grid; grid-template-columns: 120px 1fr; gap: var(--gs-spacing-16); align-items: center; padding: var(--gs-spacing-4) 0; }
+      .bar { height: 16px; border-radius: var(--gs-radius-xs); background: var(--gs-bg-accent); max-width: 100%; }
+      .radius-box { aspect-ratio: 1; background: var(--gs-bg-accent-soft); border: 1px solid var(--gs-border-accent); }
+    </style>
   </head>
   <body>
     <main>
-      <h1>Untitled</h1>
-      <p>Your content goes here.</p>
+      <header>
+        <div>
+          <h1 class="gs-text-h2">Greensighter UI</h1>
+          <p>Design tokens from the Figma design system: color, typography, spacing and radius.</p>
+        </div>
+        <div class="toggle" role="group" aria-label="Theme">
+          <button type="button" data-set-theme="dark" aria-pressed="true">Dark</button>
+          <button type="button" data-set-theme="light" aria-pressed="false">Light</button>
+        </div>
+      </header>
+
+      <section>
+        <h2 class="gs-text-h3">Semantic color</h2>
+        <p>Use these in all work. Each has a Dark and a Light value: Dark for thumbnails and social posts, Light for blog infographics. Switch with <code>data-theme</code>.</p>
+        <div id="semantic"></div>
+      </section>
+
+      <section>
+        <h2 class="gs-text-h3">Primitives</h2>
+        <p>Raw palette. These only feed the semantic tokens and shouldn't be used directly.</p>
+        <div id="primitives"></div>
+      </section>
+
+      <section>
+        <h2 class="gs-text-h3">Typography</h2>
+        <p>Always apply a text style class (<code>.gs-text-*</code>) instead of setting sizes by hand. Headlines use tighter letter spacing.</p>
+        <div id="type"></div>
+      </section>
+
+      <section>
+        <h2 class="gs-text-h3">Spacing</h2>
+        <p>8px grid, 4px for fine detail. Use <code>--gs-spacing-*</code> for gaps and padding.</p>
+        <div id="spacing"></div>
+      </section>
+
+      <section>
+        <h2 class="gs-text-h3">Radius</h2>
+        <p>Chips and pills use <code>full</code>, cards use <code>2xl</code> (24px), large glass panels use <code>4xl</code> (48px).</p>
+        <div id="radius" class="grid"></div>
+      </section>
     </main>
+
+    <script id="tokens" type="application/json">{"$description":"Greensighter design tokens, exported from the Figma file 'Design System' (TGZXUIB6V7Z5b6rO5q4zHb). Format: W3C Design Tokens (DTCG). Edit here, then run `npm run build` to regenerate css/tokens.css.","color":{"$type":"color","white":{"$value":"#ffffff"},"gray":{"25":{"$value":"#fbfbfb"},"50":{"$value":"#f5f5f5"},"100":{"$value":"#f1f1f1"},"200":{"$value":"#d4d4d7"},"300":{"$value":"#b2b2b7"},"400":{"$value":"#98989e"},"500":{"$value":"#6e6e76"},"600":{"$value":"#54545e"},"700":{"$value":"#2e2e36"},"800":{"$value":"#1d1d24"},"850":{"$value":"#101018"},"900":{"$value":"#04040c"}},"purple":{"50":{"$value":"#eef0fe"},"100":{"$value":"#cfd5ff"},"300":{"$value":"#acb5fc"},"500":{"$value":"#7583fa"},"700":{"$value":"#6356ff"},"800":{"$value":"#4d41de"}},"green":{"200":{"$value":"#b0f7c0"},"500":{"$value":"#32d77a"},"600":{"$value":"#2bb969"}},"red":{"100":{"$value":"#ffe2e2"},"200":{"$value":"#ffc9c9"},"300":{"$value":"#ffa2a2"},"400":{"$value":"#fd565b"},"500":{"$value":"#ed3d3d"},"600":{"$value":"#e7000b"},"700":{"$value":"#c10007"},"800":{"$value":"#9f0712"},"900":{"$value":"#82181a"}},"yellow":{"100":{"$value":"#fef9c2"},"200":{"$value":"#fff085"},"300":{"$value":"#ffdf20"},"400":{"$value":"#ffc456"},"500":{"$value":"#f0b100"},"600":{"$value":"#d08700"},"700":{"$value":"#a65f00"},"800":{"$value":"#894b00"},"900":{"$value":"#733e0a"}},"accent":{"pink":{"$value":"#ef40ff"},"light-pink":{"$value":"#d78cfa"},"aqua":{"$value":"#c7ffed"}},"transparent":{"white-8":{"$value":"#ffffff14"},"white-12":{"$value":"#ffffff1f"},"white-20":{"$value":"#ffffff33"},"white-32":{"$value":"#ffffff52"},"white-64":{"$value":"#ffffffa3"},"dark-6":{"$value":"#04040c0f"},"dark-10":{"$value":"#04040c1a"},"dark-20":{"$value":"#04040c33"},"dark-32":{"$value":"#04040c52"},"dark-64":{"$value":"#04040ca3"},"purple-24":{"$value":"#7583fa3d"}}},"theme":{"$description":"Semantic colors. Dark for thumbnails and social posts, Light for blog infographics.","$type":"color","dark":{"bg":{"canvas":{"$value":"{color.gray.900}"},"surface":{"$value":"{color.gray.850}"},"surface-raised":{"$value":"{color.gray.800}"},"glass":{"$value":"{color.transparent.white-8}"},"inverse":{"$value":"{color.white}"},"accent":{"$value":"{color.purple.700}"},"accent-soft":{"$value":"{color.transparent.purple-24}"}},"text":{"primary":{"$value":"{color.white}"},"secondary":{"$value":"{color.gray.300}"},"muted":{"$value":"{color.gray.500}"},"accent":{"$value":"{color.purple.300}"},"on-accent":{"$value":"{color.white}"},"inverse":{"$value":"{color.gray.900}"}},"border":{"subtle":{"$value":"{color.transparent.white-12}"},"strong":{"$value":"{color.transparent.white-20}"},"glass":{"$value":"{color.transparent.white-20}"},"accent":{"$value":"{color.purple.500}"}},"status":{"positive":{"$value":"{color.green.500}"},"negative":{"$value":"{color.red.400}"},"warning":{"$value":"{color.yellow.400}"}},"chart":{"1":{"$value":"{color.purple.700}"},"2":{"$value":"{color.purple.500}"},"3":{"$value":"{color.purple.300}"},"4":{"$value":"{color.green.500}"},"5":{"$value":"{color.accent.pink}"},"neutral":{"$value":"{color.gray.600}"}}},"light":{"bg":{"canvas":{"$value":"{color.gray.50}"},"surface":{"$value":"{color.white}"},"surface-raised":{"$value":"{color.gray.25}"},"glass":{"$value":"{color.transparent.white-64}"},"inverse":{"$value":"{color.gray.900}"},"accent":{"$value":"{color.purple.700}"},"accent-soft":{"$value":"{color.purple.50}"}},"text":{"primary":{"$value":"{color.gray.900}"},"secondary":{"$value":"{color.gray.600}"},"muted":{"$value":"{color.gray.400}"},"accent":{"$value":"{color.purple.700}"},"on-accent":{"$value":"{color.white}"},"inverse":{"$value":"{color.white}"}},"border":{"subtle":{"$value":"{color.gray.200}"},"strong":{"$value":"{color.gray.300}"},"glass":{"$value":"{color.transparent.white-64}"},"accent":{"$value":"{color.purple.500}"}},"status":{"positive":{"$value":"{color.green.600}"},"negative":{"$value":"{color.red.500}"},"warning":{"$value":"{color.yellow.600}"}},"chart":{"1":{"$value":"{color.purple.700}"},"2":{"$value":"{color.purple.500}"},"3":{"$value":"{color.purple.300}"},"4":{"$value":"{color.green.600}"},"5":{"$value":"{color.accent.pink}"},"neutral":{"$value":"{color.gray.200}"}}}},"spacing":{"0":{"$value":"0px"},"2":{"$value":"2px"},"4":{"$value":"4px"},"8":{"$value":"8px"},"12":{"$value":"12px"},"16":{"$value":"16px"},"20":{"$value":"20px"},"24":{"$value":"24px"},"32":{"$value":"32px"},"40":{"$value":"40px"},"48":{"$value":"48px"},"56":{"$value":"56px"},"64":{"$value":"64px"},"72":{"$value":"72px"},"80":{"$value":"80px"},"88":{"$value":"88px"},"96":{"$value":"96px"},"104":{"$value":"104px"},"112":{"$value":"112px"},"120":{"$value":"120px"},"128":{"$value":"128px"},"136":{"$value":"136px"},"144":{"$value":"144px"},"152":{"$value":"152px"},"160":{"$value":"160px"},"176":{"$value":"176px"},"192":{"$value":"192px"},"208":{"$value":"208px"},"224":{"$value":"224px"},"240":{"$value":"240px"},"256":{"$value":"256px"},"$description":"8px grid, 4px for fine detail. Use for gaps and padding.","$type":"dimension"},"radius":{"$description":"Chips and pills: full. Cards: 2xl. Large glass panels: 4xl.","$type":"dimension","none":{"$value":"0px"},"xs":{"$value":"4px"},"sm":{"$value":"8px"},"md":{"$value":"12px"},"lg":{"$value":"16px"},"xl":{"$value":"20px"},"2xl":{"$value":"24px"},"3xl":{"$value":"32px"},"4xl":{"$value":"48px"},"5xl":{"$value":"56px"},"6xl":{"$value":"64px"},"7xl":{"$value":"72px"},"8xl":{"$value":"80px"},"9xl":{"$value":"96px"},"full":{"$value":"9999px"}},"font":{"family":{"$type":"fontFamily","title":{"$value":["Safiro","Helvetica Neue","Arial","sans-serif"]},"body":{"$value":["Safiro","Helvetica Neue","Arial","sans-serif"]}},"weight":{"$type":"fontWeight","thin":{"$value":200,"$extensions":{"figma.style":"35 Thin"}},"light":{"$value":300,"$extensions":{"figma.style":"45 Light"}},"regular":{"$value":400,"$extensions":{"figma.style":"Regular"}},"medium":{"$value":500,"$extensions":{"figma.style":"Medium"}},"bold":{"$value":700,"$extensions":{"figma.style":"75 Bold"}}},"size":{"$type":"dimension","xxs":{"$value":"12px"},"xs":{"$value":"14px"},"sm":{"$value":"16px"},"md":{"$value":"18px"},"lg":{"$value":"20px"},"xl":{"$value":"24px"},"2xl":{"$value":"32px"},"3xl":{"$value":"48px"},"4xl":{"$value":"56px"},"5xl":{"$value":"64px"},"6xl":{"$value":"72px"},"7xl":{"$value":"80px"},"8xl":{"$value":"96px"},"9xl":{"$value":"120px"}},"line-height":{"$type":"dimension","xxs":{"$value":"16px"},"xs":{"$value":"20px"},"sm":{"$value":"24px"},"md":{"$value":"28px"},"lg":{"$value":"28px"},"xl":{"$value":"32px"},"2xl":{"$value":"40px"},"3xl":{"$value":"56px"},"4xl":{"$value":"64px"},"5xl":{"$value":"72px"},"6xl":{"$value":"80px"},"7xl":{"$value":"88px"},"8xl":{"$value":"104px"},"9xl":{"$value":"124px"}}},"text-style":{"$type":"typography","display-xl":{"$value":{"fontFamily":"{font.family.title}","fontWeight":"{font.weight.medium}","fontSize":"{font.size.9xl}","lineHeight":"{font.line-height.9xl}","letterSpacing":"-0.02em"}},"display-l":{"$value":{"fontFamily":"{font.family.title}","fontWeight":"{font.weight.medium}","fontSize":"{font.size.7xl}","lineHeight":"{font.line-height.7xl}","letterSpacing":"-0.02em"}},"h1":{"$value":{"fontFamily":"{font.family.title}","fontWeight":"{font.weight.medium}","fontSize":"{font.size.5xl}","lineHeight":"{font.line-height.5xl}","letterSpacing":"-0.015em"}},"h2":{"$value":{"fontFamily":"{font.family.title}","fontWeight":"{font.weight.medium}","fontSize":"{font.size.3xl}","lineHeight":"{font.line-height.3xl}","letterSpacing":"-0.01em"}},"h3":{"$value":{"fontFamily":"{font.family.title}","fontWeight":"{font.weight.medium}","fontSize":"{font.size.2xl}","lineHeight":"{font.line-height.2xl}","letterSpacing":"-0.005em"}},"h4":{"$value":{"fontFamily":"{font.family.title}","fontWeight":"{font.weight.medium}","fontSize":"{font.size.xl}","lineHeight":"{font.line-height.xl}","letterSpacing":"0em"}},"body-l":{"$value":{"fontFamily":"{font.family.body}","fontWeight":"{font.weight.regular}","fontSize":"{font.size.lg}","lineHeight":"{font.line-height.lg}","letterSpacing":"0em"}},"body-m":{"$value":{"fontFamily":"{font.family.body}","fontWeight":"{font.weight.regular}","fontSize":"{font.size.sm}","lineHeight":"{font.line-height.sm}","letterSpacing":"0em"}},"body-s":{"$value":{"fontFamily":"{font.family.body}","fontWeight":"{font.weight.regular}","fontSize":"{font.size.xs}","lineHeight":"{font.line-height.xs}","letterSpacing":"0em"}},"label-m":{"$value":{"fontFamily":"{font.family.body}","fontWeight":"{font.weight.medium}","fontSize":"{font.size.xs}","lineHeight":"{font.line-height.xs}","letterSpacing":"0em"}},"label-s":{"$value":{"fontFamily":"{font.family.body}","fontWeight":"{font.weight.medium}","fontSize":"{font.size.xxs}","lineHeight":"{font.line-height.xxs}","letterSpacing":"0em"}},"caption":{"$value":{"fontFamily":"{font.family.body}","fontWeight":"{font.weight.regular}","fontSize":"{font.size.xxs}","lineHeight":"{font.line-height.xxs}","letterSpacing":"0em"}}}}</script>
+    <script>
+      const tokens = JSON.parse(document.getElementById('tokens').textContent);
+      const el = (tag, attrs = {}, ...kids) => {
+        const n = document.createElement(tag);
+        for (const [k, v] of Object.entries(attrs)) k === 'style' ? n.style.cssText = v : n.setAttribute(k, v);
+        n.append(...kids);
+        return n;
+      };
+      const entries = group => Object.entries(group).filter(([k]) => !k.startsWith('$'));
+      const css = name => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+
+      function swatch(varName, note) {
+        return el('div', { class: 'swatch' },
+          el('div', { class: 'chip' }, el('div', { style: `background: var(${varName})` })),
+          el('div', { class: 'meta' }, el('span', { class: 'gs-text-label-m' }, varName.replace('--gs-', '')), el('code', { 'data-var': varName }, note ?? '')));
+      }
+
+      function renderSemantic() {
+        const root = document.getElementById('semantic');
+        root.replaceChildren();
+        for (const [group, items] of entries(tokens.theme.dark)) {
+          root.append(el('h3', { class: 'gs-text-label-m' }, group));
+          const grid = el('div', { class: 'grid' });
+          for (const [name] of entries(items)) {
+            const v = `--gs-${group}-${name}`;
+            grid.append(swatch(v, css(v).replace(/var\(--gs-color-|\)/g, '')));
+          }
+          root.append(grid);
+        }
+      }
+
+      const primitives = document.getElementById('primitives');
+      for (const [family, items] of entries(tokens.color)) {
+        const grid = el('div', { class: 'grid' });
+        const list = '$value' in items ? [[null, items]] : entries(items);
+        for (const [shade, t] of list) {
+          grid.append(swatch(`--gs-color-${shade ? `${family}-${shade}` : family}`, t.$value));
+        }
+        primitives.append(el('h3', { class: 'gs-text-label-m' }, family), grid);
+      }
+
+      const type = document.getElementById('type');
+      for (const [name, t] of entries(tokens['text-style'])) {
+        const size = t.$value.fontSize.match(/\.([^.}]+)\}$/)[1];
+        const px = tokens.font.size[size].$value;
+        const lh = tokens.font['line-height'][t.$value.lineHeight.match(/\.([^.}]+)\}$/)[1]].$value;
+        type.append(el('div', { class: 'type-row' },
+          el('div', {}, el('div', { class: 'gs-text-label-m' }, name), el('code', {}, `${px} / ${lh}`)),
+          el('div', { class: `sample gs-text-${name}` }, 'Grow with green insight')));
+      }
+
+      const spacing = document.getElementById('spacing');
+      for (const [name, t] of entries(tokens.spacing)) {
+        if (name === '0') continue;
+        spacing.append(el('div', { class: 'bar-row' },
+          el('code', {}, `spacing-${name}`),
+          el('div', { class: 'bar', style: `width: var(--gs-spacing-${name})` })));
+      }
+
+      const radius = document.getElementById('radius');
+      for (const [name, t] of entries(tokens.radius)) {
+        radius.append(el('div', { class: 'swatch' },
+          el('div', { style: 'padding: var(--gs-spacing-16)' }, el('div', { class: 'radius-box', style: `border-radius: min(var(--gs-radius-${name}), 50%)` })),
+          el('div', { class: 'meta' }, el('span', { class: 'gs-text-label-m' }, name), el('code', {}, t.$value))));
+      }
+
+      const buttons = document.querySelectorAll('[data-set-theme]');
+      function setTheme(theme) {
+        document.documentElement.dataset.theme = theme;
+        buttons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.setTheme === theme)));
+        try { localStorage.setItem('gs-theme', theme); } catch {}
+        renderSemantic();
+      }
+      buttons.forEach(b => b.addEventListener('click', () => setTheme(b.dataset.setTheme)));
+      let saved = null;
+      try { saved = localStorage.getItem('gs-theme'); } catch {}
+      setTheme(saved === 'light' ? 'light' : 'dark');
+    </script>
   </body>
 </html>
