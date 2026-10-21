@@ -1,0 +1,1450 @@
+{
+ "base": {
+  "Buttons|1:1183": [
+   {
+    "name": "Buttons/Button",
+    "nodeId": "3287:427074",
+    "variants": 200,
+    "props": "⬅️ Icon leading:B=true; ➡️ Icon trailing:B=true; 🔀 Icon leading swap:I=3465:410042; 🔀 Icon trailing swap:I=3465:410042; Loading text:B=true; Size:V=[xs/sm/md/lg/xl]; Hierarchy:V=[Primary/Secondary/Tertiary/Link color/Link gray]; State:V=[Default/Hover/Focused/Disabled/Loading]; Icon only:V=[False/True]"
+   },
+   {
+    "name": "Buttons/Social button",
+    "nodeId": "1256:130788",
+    "variants": 216,
+    "props": "Size:V=[md/lg]; Social:V=[Google/Facebook/Apple/Twitter/Figma/Dribbble]; Supporting text:V=[True/False]; Theme:V=[Brand/Gray/Color]; State:V=[Default/Hover/Focused]"
+   },
+   {
+    "name": "Buttons/Social button group",
+    "nodeId": "1256:132638",
+    "variants": 12,
+    "props": "Size:V=[md/lg]; Style:V=[Buttons/Icons]; Theme:V=[Brand/Color/Gray]"
+   },
+   {
+    "name": "Mobile app store badge",
+    "nodeId": "1303:2162",
+    "variants": 20,
+    "props": "Size:V=[md/lg]; Store:V=[Google Play/App Store/Mac App Store/Galaxy Store/AppGallery]; Style:V=[Brand/Outline]"
+   },
+   {
+    "name": "Buttons/Button close X",
+    "nodeId": "2763:420129",
+    "variants": 18,
+    "props": "Size:V=[sm/md/lg]; Dark background:V=[False/True]; State:V=[Default/Hover/Focused]"
+   },
+   {
+    "name": "Buttons/Button destructive",
+    "nodeId": "6218:85578",
+    "variants": 175,
+    "props": "⬅️ Icon leading:B=true; 🔀 Icon leading swap:I=3465:410042; ➡️ Icon trailing:B=true; 🔀 Icon trailing swap:I=3465:410042; Loading text:B=true; Size:V=[xs/sm/md/lg/xl]; Hierarchy:V=[Primary/Secondary/Tertiary/Link]; State:V=[Default/Hover/Focused/Disabled/Loading]; Icon only:V=[False/True]"
+   },
+   {
+    "name": "Buttons/Button utility",
+    "nodeId": "8003:526508",
+    "variants": 16,
+    "props": "🔀 Icon swap:I=3465:410042; Size:V=[xs/sm]; Hierarchy:V=[Secondary/Tertiary]; State:V=[Default/Hover/Focused/Disabled]"
+   },
+   {
+    "name": "Buttons/Button loading icon",
+    "nodeId": "8993:429278",
+    "variants": 2,
+    "props": "Size:V=[sm/md]"
+   }
+  ],
+  "Avatars|18:1350": [
+   {
+    "name": "_Avatar image",
+    "nodeId": "933:30268",
+    "variants": 2,
+    "props": "Source:B=true; Type:V=[Square/Portrait]"
+   },
+   {
+    "name": "Avatar label group",
+    "nodeId": "82:2793",
+    "variants": 3,
+    "props": "Supporting text:B=true; Size:V=[sm/md/lg]"
+   },
+   {
+    "name": "_Avatar add button",
+    "nodeId": "1102:4864",
+    "variants": 12,
+    "props": "Size:V=[xs/sm/md]; State:V=[Default/Hover/Focus/Disabled]"
+   },
+   {
+    "name": "Avatar profile photo",
+    "nodeId": "1217:108477",
+    "variants": 9,
+    "props": "Verified:B=true; Placeholder:V=[False/True]; Text:V=[False/True]; Size:V=[sm/md/lg]"
+   },
+   {
+    "name": "Avatar group",
+    "nodeId": "1274:812",
+    "variants": 3,
+    "props": "More users:B=true; Add more button:B=true; Size:V=[xs/sm/md]"
+   },
+   {
+    "name": "Status icon",
+    "nodeId": "11008:45024",
+    "variants": 5,
+    "props": "Type:V=[Offline/Online/Avatar/Verified tick/Count]"
+   },
+   {
+    "name": "Avatar",
+    "nodeId": "11008:45389",
+    "variants": 36,
+    "props": "Status icon:B=true; Size:V=[xs/sm/md/lg/xl/2xl]; Border:V=[False/True]; Placeholder icon:V=[False/True]; Placeholder text:V=[False/True]"
+   }
+  ],
+  "Badges|12:539": [
+   {
+    "name": "Badge",
+    "nodeId": "1046:3819",
+    "variants": 666,
+    "props": "🔀 Flag swap:I=11834:15374; 🔀 Icon trailing swap:I=3463:404482; 🔀 Icon leading swap:I=3463:404509; Size:V=[sm/md/lg]; Type:V=[Pill color/Badge color/Badge modern]; Icon:V=[False/Dot/Country/X close/Avatar/Icon trailing/Icon leading/Only]; Color:V=[Gray/Brand/Error/Warning/Success/Slate/Sky/Blue/Indigo/Purple/Pink/Orange]"
+   },
+   {
+    "name": "Badge group",
+    "nodeId": "1046:8088",
+    "variants": 80,
+    "props": "Icon:B=true; Badge:V=[Leading/Trailing]; Size:V=[md/lg]; Type:V=[Pill color/Badge modern]; Color:V=[Gray/Brand/Error/Warning/Success]; State:V=[Default/Hover]"
+   },
+   {
+    "name": "_Badge close X",
+    "nodeId": "4824:404158",
+    "variants": 48,
+    "props": "Type:V=[Square/Rounded]; Color:V=[Gray/Brand/Error/Warning/Success/Slate/Sky/Blue/Indigo/Purple/Pink/Orange]; State:V=[Default/Hover]"
+   }
+  ],
+  "Button groups|16:399": [
+   {
+    "name": "_Button group base",
+    "nodeId": "1046:9312",
+    "variants": 64,
+    "props": "🔀 Icon swap:I=3465:410042; Size:V=[sm/md]; Current:V=[False/True]; Icon:V=[False/Leading/Only/Dot]; State:V=[Default/Hover/Focused/Disabled]"
+   },
+   {
+    "name": "Button group",
+    "nodeId": "1046:10171",
+    "variants": 6,
+    "props": "Size:V=[sm/md]; Icon:V=[False/Leading/Only]"
+   }
+  ],
+  "Checkboxes|1097:63638": [
+   {
+    "name": "Checkbox",
+    "nodeId": "1097:63652",
+    "variants": 72,
+    "props": "Supporting text:B=true; Checked:V=[False/True]; Indeterminate:V=[False/True]; Size:V=[sm/md]; Type:V=[Checkbox/Radio]; Text:V=[False/True]; State:V=[Default/Hover/Focused/Disabled]"
+   },
+   {
+    "name": "_Checkbox base",
+    "nodeId": "1097:63886",
+    "variants": 40,
+    "props": "Checked:V=[False/True]; Indeterminate:V=[False/True]; Size:V=[sm/md]; Type:V=[Checkbox/Radio]; State:V=[Default/Hover/Focused/Disabled]"
+   }
+  ],
+  "Dropdowns|18:0": [
+   {
+    "name": "_Dropdown menu header",
+    "nodeId": "3281:382878",
+    "variants": 4,
+    "props": "Supporting text:B=true; Type:V=[Avatar group/Header/Subheading/Search]"
+   },
+   {
+    "name": "Dropdown menu",
+    "nodeId": "3281:383083",
+    "variants": 28,
+    "props": "Scrollbar:B=true; Chevron dropdown:B=true; Type:V=[Button simple/Button advanced/Button link/Icon simple/Icon advanced/Search simple/Search advanced/Integrations/Account button/Account avatar/Account card xs/Account card sm/Account card md/Account breadcrumb]; Open:V=[False/True]"
+   },
+   {
+    "name": "_Dropdown menu list item",
+    "nodeId": "11546:537565",
+    "variants": 5,
+    "props": "Chevron:B=true; Shortcut:B=true; Leading icon:B=true; Inset icon:V=[True/Default]; State:V=[Default/Hover/active/Open/Disabled]; Divider:V=[False/True]"
+   },
+   {
+    "name": "_Dropdown menu item inset icon",
+    "nodeId": "11546:538631",
+    "variants": 7,
+    "props": "🔀 Icon swap:I=3465:410042; Type:V=[Spacer/Icon/Check/Checkbox/Dot/Avatar/Integration icon]"
+   },
+   {
+    "name": "Context menu",
+    "nodeId": "11547:540792",
+    "variants": 4,
+    "props": "Type:V=[Simple/Advanced]; Open:V=[False/True]"
+   },
+   {
+    "name": "_Dropdown menu footer",
+    "nodeId": "11553:542018",
+    "variants": 2,
+    "props": "Type:V=[Text/Button]"
+   },
+   {
+    "name": "_Dropdown account list item",
+    "nodeId": "12471:593498",
+    "variants": 2,
+    "props": "State:V=[Default/Hover/active]"
+   }
+  ],
+  "Inputs|85:1269": [
+   {
+    "name": "Input field",
+    "nodeId": "1090:57817",
+    "variants": 294,
+    "props": "Label:B=true; Hint text:B=true; Help icon:B=true; 🔀 Icon swap:I=3463:406209; ↳ Required *:B=true; ⬅️ Icon leading:B=true; Time selector:B=true; Size:V=[sm/md/lg]; Type:V=[Default/Leading dropdown/Trailing dropdown/Leading text/Payment input/Tags inner/Tags outer/Trailing button/Password/Date and time/Number counter horizontal/Number counter vertical/OTP/File upload]; Destructive:V=[False/True]; State:V=[Placeholder/Filled/Focused/Disabled]"
+   },
+   {
+    "name": "_Mega input field base",
+    "nodeId": "1106:66560",
+    "variants": 15,
+    "props": "Size:V=[sm/md/lg]; State:V=[Placeholder/Focused/Filled/Disabled/Error]"
+   },
+   {
+    "name": "Verification code input field",
+    "nodeId": "1106:66757",
+    "variants": 6,
+    "props": "Label:B=true; Hint text:B=true; Size:V=[sm/md/lg]; Digits:V=[4/6]"
+   },
+   {
+    "name": "Textarea input field",
+    "nodeId": "1238:278",
+    "variants": 42,
+    "props": "Label:B=true; Hint text:B=true; ↳ Required *:B=true; ↳ Help icon:B=true; Resize handle:B=true; Size:V=[sm/md]; Type:V=[Default/Tags inner/Tags outer]; Destructive:V=[False/True]; State:V=[Placeholder/Default/Focused/Disabled]"
+   }
+  ],
+  "Progress indicators|1154:89940": [
+   {
+    "name": "Progress bar",
+    "nodeId": "1085:57382",
+    "variants": 55,
+    "props": "Progress:V=[0%/10%/20%/30%/40%/50%/60%/70%/80%/90%/100%]; Label:V=[False/Right/Bottom/Top floating/Bottom floating]"
+   },
+   {
+    "name": "Progress circle",
+    "nodeId": "1084:2717",
+    "variants": 10,
+    "props": "Label:B=true; Size:V=[xxs/xs/sm/md/lg]; Shape:V=[Circle/Half circle]"
+   }
+  ],
+  "Radio groups|122:3484": [
+   {
+    "name": "Radio group item",
+    "nodeId": "124:2838",
+    "variants": 144,
+    "props": "Badge:B=true; Selected:V=[False/True]; Size:V=[sm/md]; Type:V=[Icon simple/Icon card/Avatar/Payment icon/Radio button/Checkbox]; State:V=[Default/Hover/Focused]; Breakpoint:V=[Mobile/Desktop]"
+   },
+   {
+    "name": "Radio group",
+    "nodeId": "1142:87213",
+    "variants": 24,
+    "props": "Size:V=[sm/md]; Type:V=[Icon simple/Icon card/Avatar/Payment icon/Radio button/Checkbox]; Breakpoint:V=[Desktop/Mobile]"
+   }
+  ],
+  "Select|11132:11643": [
+   {
+    "name": "Select",
+    "nodeId": "3281:377673",
+    "variants": 90,
+    "props": "Label:B=true; Hint text:B=true; Supporting text:B=true; Scroll bar:B=true; 🔀 Icon swap:I=3463:405657; ↳ Required *:B=true; ↳ Help icon:B=true; Shortcut:B=true; Size:V=[sm/md/lg]; Type:V=[Default/Icon leading/Avatar leading/Dot leading/Search/Tags]; State:V=[Placeholder/Default/Focused/Open/Disabled]"
+   },
+   {
+    "name": "Multi-select",
+    "nodeId": "12206:577041",
+    "variants": 21,
+    "props": "Label:B=true; Hint text:B=true; Supporting text:B=true; Scroll bar:B=true; ↳ Required *:B=true; ↳ Help icon:B=true; Size:V=[sm/md/lg]; State:V=[Default/Active/Focused/Open default/Open active/Search empty state/Disabled]"
+   },
+   {
+    "name": "_Select menu item",
+    "nodeId": "3281:380429",
+    "variants": 72,
+    "props": "Supporting text:B=true; 🔀 Icon swap:I=3463:405657; Size:V=[sm/md/lg]; Selected:V=[False/True]; Type:V=[Default/Icon leading/Avatar leading/Dot leading]; State:V=[Default/Hover/Disabled]"
+   },
+   {
+    "name": "_Multi-select menu item",
+    "nodeId": "12206:575660",
+    "variants": 9,
+    "props": "Supporting text:B=true; Size:V=[sm/md/lg]; State:V=[Default/Hover/Disabled]"
+   }
+  ],
+  "Sliders|1086:1423": [
+   {
+    "name": "Slider",
+    "nodeId": "1086:534",
+    "variants": 30,
+    "props": "Label:V=[False/Bottom/Top floating]; Right control:V=[25%/50%/75%/100%]; Left control:V=[0%/25%/50%/75%]"
+   },
+   {
+    "name": "_Control handle",
+    "nodeId": "3287:442783",
+    "variants": 9,
+    "props": "State:V=[Default/Hover/Focused]; Type:V=[False/Text/Tooltip]"
+   }
+  ],
+  "Tags|3306:403749": [
+   {
+    "name": "Tag",
+    "nodeId": "3307:417515",
+    "variants": 72,
+    "props": "🔀 Flag swap:I=11834:15374; Size:V=[sm/md/lg]; Icon:V=[False/Country/Avatar/Dot]; Action:V=[X close/Text only/Count]; Checkbox:V=[False/True]"
+   },
+   {
+    "name": "_Tag close X",
+    "nodeId": "3307:417672",
+    "variants": 6,
+    "props": "Size:V=[sm/md/lg]; State:V=[Default/Hover]"
+   },
+   {
+    "name": "_Tag count",
+    "nodeId": "3307:417827",
+    "variants": 3,
+    "props": "Size:V=[sm/md/lg]"
+   },
+   {
+    "name": "_Tag checkbox",
+    "nodeId": "3308:406033",
+    "variants": 24,
+    "props": "Checked:V=[False/True]; Size:V=[sm/md/lg]; State:V=[Default/Hover/Focused/Disabled]"
+   }
+  ],
+  "Text editors|9291:557994": [
+   {
+    "name": "_Text editor icon",
+    "nodeId": "9291:551743",
+    "variants": 48,
+    "props": "Type:V=[Bold/Italic/Underline/Dot points/Left align/Center align/Right align/Justify/Link/Insert image/Attach file/Insert code/Color picker/Generate/More options/Insert video]; State:V=[Default/Hover/Current]"
+   },
+   {
+    "name": "Text editor toolbar",
+    "nodeId": "9291:557668",
+    "variants": 2,
+    "props": "Dropdowns:B=true; Type:V=[Simple/Advanced]"
+   },
+   {
+    "name": "Text editor tooltip",
+    "nodeId": "9291:557669",
+    "variants": 2,
+    "props": "Type:V=[Simple/Advanced]"
+   },
+   {
+    "name": "Text editor",
+    "nodeId": "9292:559325",
+    "variants": 4,
+    "props": "Scroll bar:B=true; Hint text:B=true; Type:V=[Default/Floating toolbar]; Size:V=[sm/md]"
+   }
+  ],
+  "Toggles|1102:4631": [
+   {
+    "name": "_Toggle base",
+    "nodeId": "122:3294",
+    "variants": 32,
+    "props": "Type:V=[Default/Slim]; Pressed:V=[False/True]; Size:V=[sm/md]; State:V=[Default/Hover/Focus/Disabled]"
+   },
+   {
+    "name": "Toggle",
+    "nodeId": "1102:4208",
+    "variants": 64,
+    "props": "Supporting text:B=true; Type:V=[Default/Slim]; Pressed:V=[False/True]; Size:V=[sm/md]; Text:V=[False/True]; State:V=[Default/Hover/Focus/Disabled]"
+   }
+  ],
+  "Tooltips|1052:485": [
+   {
+    "name": "Tooltip",
+    "nodeId": "1052:489",
+    "variants": 14,
+    "props": "Text:T=This is a tooltip; Supporting text:V=[False/True]; Arrow:V=[None/Bottom left/Bottom right/Left/Right/Bottom center/Top center]"
+   },
+   {
+    "name": "Help icon",
+    "nodeId": "1054:13",
+    "variants": 28,
+    "props": "Cursor:B=true; Open:V=[False/True]; Supporting text:V=[False/True]; Tooltip:V=[Top no arrow/Top arrow/Left/Top left/Bottom/Right/Top right]"
+   }
+  ],
+  "Video players|9316:559159": [
+   {
+    "name": "_Video volume slider handle",
+    "nodeId": "9264:575544",
+    "variants": 5,
+    "props": "Volume:V=[0%/25%/50%/75%/100%]"
+   },
+   {
+    "name": "_Video volume slider",
+    "nodeId": "9264:575739",
+    "variants": 2,
+    "props": "State:V=[Default/Hover]"
+   },
+   {
+    "name": "_Video action button",
+    "nodeId": "9264:575953",
+    "variants": 36,
+    "props": "Type:V=[Play/Pause/Fast backward/Fast forward/Skip backward/Skip forward/Volume none/Volume min/Volume max/Video minus/Video plus/AirPlay/Minimize 01/Maximize 01/Maximize 02/Minimize 02/Playback speed/Subtitles/CC]; State:V=[Default/Hover]"
+   },
+   {
+    "name": "_Video actions bar",
+    "nodeId": "9264:576129",
+    "variants": 6,
+    "props": "Timestamp indicator:B=true; Playing:V=[False/True]; Size:V=[sm/md/lg]"
+   },
+   {
+    "name": "Video player 16:9",
+    "nodeId": "9264:576771",
+    "variants": 6,
+    "props": "Overlay action:B=true; Actions bar:B=true; Size:V=[sm/md/lg]; Playing:V=[False/True]"
+   },
+   {
+    "name": "_Video overlay action",
+    "nodeId": "9264:577247",
+    "variants": 4,
+    "props": "Paused:V=[False/True]; State:V=[Default/Hover]"
+   },
+   {
+    "name": "_Video action tooltip",
+    "nodeId": "9264:577644",
+    "variants": 2,
+    "props": "Badge:V=[False/True]"
+   }
+  ]
+ },
+ "app": {
+  "Activity feeds|253:14231": [
+   {
+    "name": "_Feed item base",
+    "nodeId": "1254:127644",
+    "variants": 16,
+    "props": "New dot:B; Size:V=[sm/md]; Supporting item:V=[False/Labels/File/Text]; Connector:V=[False/True]"
+   },
+   {
+    "name": "Activity feed",
+    "nodeId": "1254:128631",
+    "variants": 6,
+    "props": "Divider:V=[Divider/Connector/False/Line]; Type:V=[Notifications/Messages]"
+   }
+  ],
+  "Alerts & notifications|176:4256": [
+   {
+    "name": "Alert",
+    "nodeId": "1130:81134",
+    "variants": 24,
+    "props": "X close button:B; Actions:B; Supporting text:B; Color:V=[Default/Gray/Error/Warning/Success/Brand]; Size:V=[Floating/Full-width]; Breakpoint:V=[Desktop/Mobile]"
+   },
+   {
+    "name": "Notification",
+    "nodeId": "1135:618",
+    "variants": 18,
+    "props": "X close button:B; Actions:B; Supporting text:B; Type:V=[Primary icon/Image/Avatar/Gray icon/Error icon/Warning icon/Success icon/No icon/Progress indicator]; Breakpoint:V=[Desktop/Mobile]"
+   }
+  ],
+  "Application navigation|82:1862": [
+   {
+    "name": "Sidebar navigation",
+    "nodeId": "1158:90768",
+    "variants": 17,
+    "props": "Open:V=[False/True]; Type:V=[Simple/Dual-tier/Slim/Sections dividers/Sections subheadings]; Breakpoint:V=[Desktop/Mobile]"
+   },
+   {
+    "name": "Header navigation",
+    "nodeId": "1207:1678",
+    "variants": 12,
+    "props": "Notification counter:B; Desktop open:B; Type:V=[Simple/Dual-tier/Tabs/Centered]; Mobile open:V=[False/True]; Breakpoint:V=[Desktop/Mobile]"
+   },
+   {
+    "name": "_Nav item base",
+    "nodeId": "1152:89220",
+    "variants": 6,
+    "props": "Badge:B; Icon trailing:B; Icon leading:B; Dot:B; Icon swap:I; Current:V=[False/True]; State:V=[Default/Hover/Focused]"
+   },
+   {
+    "name": "_Nav item dropdown base",
+    "nodeId": "1152:90366",
+    "variants": 4,
+    "props": "Open:V=[False/True]; Current:V=[False/True]"
+   },
+   {
+    "name": "_Nav featured card",
+    "nodeId": "1157:90307",
+    "variants": 13,
+    "props": "X close button:B; Type:V=[13 opts: Progress bar/Progress circle/Image/Cookie preferences/Referral link/Onboarding steps...]"
+   },
+   {
+    "name": "_Nav menu button",
+    "nodeId": "1161:14070",
+    "variants": 6,
+    "props": "Opened:V=[False/True]; State:V=[Default/Hover/Focused]"
+   },
+   {
+    "name": "_Nav button",
+    "nodeId": "1165:736",
+    "variants": 12,
+    "props": "Icon swap:I; Icon leading:B; Current:V=[False/True]; State:V=[Default/Hover/Focused]; Icon only:V=[False/True]"
+   },
+   {
+    "name": "_Nav account card menu item",
+    "nodeId": "7891:71338",
+    "variants": 8,
+    "props": "Shortcut:B; Icon swap:I; Type:V=[Menu item/Account]; State:V=[Default/Hover]; Current:V=[False/True]"
+   },
+   {
+    "name": "_Nav account card",
+    "nodeId": "7891:87996",
+    "variants": 6,
+    "props": "Type:V=[Card/Simple]; Open:V=[False/True]; Breakpoint:V=[Desktop/Mobile]"
+   }
+  ],
+  "Breadcrumbs|43:3087": [
+   {
+    "name": "_Breadcrumb button base",
+    "nodeId": "43:3221",
+    "variants": 24,
+    "props": "Current:V=[False/True]; Type:V=[Button/Text]; Icon:V=[False/True]; State:V=[Default/Hover/Focused]"
+   },
+   {
+    "name": "Breadcrumbs",
+    "nodeId": "1122:153",
+    "variants": 16,
+    "props": "Divider:V=[Chevron/Slash]; Type:V=[Text/Text with line/Button/Account dropdowns]; Breakpoint:V=[Desktop/Mobile]"
+   }
+  ],
+  "Calendars|7988:349308": [
+   {
+    "name": "_Calendar view dropdown",
+    "nodeId": "7991:21267",
+    "variants": 2,
+    "props": "Open:V=[True/False]"
+   },
+   {
+    "name": "_Calendar header",
+    "nodeId": "7991:53152",
+    "variants": 2,
+    "props": "Supporting text:B; View dropdown:B; Badge:B; Breakpoint:V=[Desktop/Mobile]"
+   },
+   {
+    "name": "_Calendar cell date",
+    "nodeId": "7991:56363",
+    "variants": 3,
+    "props": "Type:V=[Default/Selected/Today's date]"
+   },
+   {
+    "name": "_Calendar event/Month view",
+    "nodeId": "7991:78181",
+    "variants": 27,
+    "props": "Supporting text:B; Dot:B; State:V=[Default/Hover]; Color:V=[Gray/Brand/Green/Blue/Indigo/Purple/Pink/Orange/Yellow]; Breakpoint:V=[Desktop/Mobile]"
+   },
+   {
+    "name": "_Calendar cell/Month view",
+    "nodeId": "7991:104484",
+    "variants": 6,
+    "props": "More events indicator:B; Event 1:B; Event 2:B; Event 3:B; State:V=[Default/Hover/Disabled]; Breakpoint:V=[Desktop/Mobile]"
+   },
+   {
+    "name": "_Calendar event/Day and week view",
+    "nodeId": "7996:12700",
+    "variants": 18,
+    "props": "Dot:B; Supporting text:B; State:V=[Default/Hover]; Color:V=[Gray/Brand/Green/Blue/Indigo/Purple/Pink/Orange/Yellow]"
+   },
+   {
+    "name": "_Calendar cell/Day and week view",
+    "nodeId": "7996:12741",
+    "variants": 10,
+    "props": "Type:V=[Empty/30 min/60 min/90 min/120 min]; State:V=[Default/Hover]"
+   },
+   {
+    "name": "_Calendar column header",
+    "nodeId": "7997:11141",
+    "variants": 6,
+    "props": "Date:B; Type:V=[Default/Selected/Today's date]; Breakpoint:V=[Desktop/Mobile]"
+   },
+   {
+    "name": "_Calendar time marker",
+    "nodeId": "8003:31690",
+    "variants": 2,
+    "props": "Breakpoint:V=[Desktop/Mobile]"
+   },
+   {
+    "name": "Calendar",
+    "nodeId": "8022:24550",
+    "variants": 6,
+    "props": "Type:V=[Month view/Week view/Day view]; Breakpoint:V=[Desktop/Mobile]"
+   }
+  ],
+  "Card headers|223:8525": [
+   {
+    "name": "Card header",
+    "nodeId": "1211:169",
+    "variants": 4,
+    "props": "Actions:B; Dropdown icon:B; Supporting text:B; Divider:B; Badge:B; Avatar:V=[False/True]; Breakpoint:V=[Desktop/Mobile]"
+   }
+  ],
+  "Charts|1050:146949": [
+   {
+    "name": "_X-axis",
+    "nodeId": "1061:47441",
+    "variants": 6,
+    "props": "Data:V=[12 months/30 days/7 days]; Breakpoint:V=[Desktop/Mobile]"
+   },
+   {
+    "name": "_Chart data",
+    "nodeId": "1061:47609",
+    "variants": 18,
+    "props": "Series 2:B; Series 3:B; Gradient background:B; Lines background:B; Line border:B; Chart type:V=[18 opts: Line gradual 01/Line gradual 02/Line gradual 03/Line gradual 04/Line wavy 01/Line wavy 02...]"
+   },
+   {
+    "name": "Line and bar chart",
+    "nodeId": "1062:46989",
+    "variants": 24,
+    "props": "Legend:V=[False/Top/Right]; Axis labels:V=[False/True]; Chart style:V=[Line/Bar]; Breakpoint:V=[Desktop/Mobile]"
+   },
+   {
+    "name": "_Y-axis line",
+    "nodeId": "1062:47445",
+    "variants": 2,
+    "props": "Label:V=[True/False]"
+   },
+   {
+    "name": "_Legend",
+    "nodeId": "1062:47961",
+    "variants": 2,
+    "props": "Orientation:V=[Vertical/Horizontal]"
+   },
+   {
+    "name": "_Y-axis",
+    "nodeId": "1067:824",
+    "variants": 2,
+    "props": "Label:V=[False/True]"
+   },
+   {
+    "name": "_Activity gauge",
+    "nodeId": "1076:4088",
+    "variants": 4,
+    "props": "Label:B; Size:V=[xs/sm/md/lg]"
+   },
+   {
+    "name": "Activity gauge",
+    "nodeId": "1078:155",
+    "variants": 12,
+    "props": "Size:V=[xs/sm/md/lg]; Legend:V=[False/Bottom/Right]"
+   },
+   {
+    "name": "_Pie chart",
+    "nodeId": "1079:51184",
+    "variants": 4,
+    "props": "Hole:V=[False/25%/50%/75%]"
+   },
+   {
+    "name": "Pie chart",
+    "nodeId": "1084:114",
+    "variants": 10,
+    "props": "Size:V=[xxs/xs/sm/md/lg]; Legend:V=[False/True]"
+   },
+   {
+    "name": "Radar chart",
+    "nodeId": "1084:7362",
+    "variants": 3,
+    "props": "Legend:V=[False/Right/Bottom]"
+   },
+   {
+    "name": "Chart marker",
+    "nodeId": "8100:193259",
+    "variants": 3,
+    "props": "Cursor:B; Tooltip:B; Type:V=[Line/Dash/Minimal]"
+   }
+  ],
+  "Code snippets|1221:106300": [
+   {
+    "name": "Code snippet",
+    "nodeId": "1234:243",
+    "variants": 3,
+    "props": "Mask content:B; Actions:B; Header copy button:B; Type:V=[Horizontal/Vertical/Vertical with tabs]"
+   },
+   {
+    "name": "_Code snippet tabs",
+    "nodeId": "9282:60274",
+    "variants": 6,
+    "props": "Current:V=[False/True]; State:V=[Default/Hover/Focus]"
+   }
+  ],
+  "Color pickers|12206:573373": [
+   {
+    "name": "_Color inputs",
+    "nodeId": "12304:616891",
+    "variants": 6,
+    "props": "Color model:V=[Hex/RGB/CSS/HSL/HSB/Gradient stop]"
+   },
+   {
+    "name": "Color picker",
+    "nodeId": "12423:52680",
+    "variants": 12,
+    "props": "Tabs:B; Type:V=[12 opts: Solid color/Gradient stops/Image upload/Color swatch/Saved swatches sm/Saved swatches md...]"
+   },
+   {
+    "name": "_Color swatch",
+    "nodeId": "12423:52815",
+    "variants": 6,
+    "props": "Type:V=[Default/Action]; State:V=[Default/Hover/Focused]"
+   },
+   {
+    "name": "Color picker dropdown",
+    "nodeId": "12424:15898",
+    "variants": 12,
+    "props": "Percentage input:B; Type:V=[Swatch sm/Swatch button/Swatch button link/Hex input/Select/Swatch md]; Open:V=[False/True]"
+   },
+   {
+    "name": "Color picker modal",
+    "nodeId": "12427:142023",
+    "variants": 2,
+    "props": "Breakpoint:V=[Desktop/Mobile]"
+   },
+   {
+    "name": "_Color swatch handle",
+    "nodeId": "12436:10729",
+    "variants": 2,
+    "props": "Type:V=[Default/Slider]"
+   }
+  ],
+  "Command menus|3307:403757": [
+   {
+    "name": "_Command dropdown menu item",
+    "nodeId": "3307:404956",
+    "variants": 24,
+    "props": "Shortcut:B; Supporting text:B; Icon swap:I; Type:V=[Default/Icon leading/Avatar leading/Dot leading]; State:V=[Default/Hover/Focus]; Text:V=[Default/Stacked]"
+   },
+   {
+    "name": "_Command shortcut",
+    "nodeId": "3307:405262",
+    "variants": 2,
+    "props": "Supporting text:B; Icon:B; Dual:V=[True/False]"
+   },
+   {
+    "name": "_Command input",
+    "nodeId": "3307:405355",
+    "variants": 3,
+    "props": "Help icon:B; Shortcut:B; State:V=[Placeholder/Filled/Focus]"
+   },
+   {
+    "name": "_Command bar menu section",
+    "nodeId": "3307:405570",
+    "variants": 2,
+    "props": "Heading:B; Scrollable:V=[False/True]"
+   },
+   {
+    "name": "Command bar",
+    "nodeId": "3307:407570",
+    "variants": 10,
+    "props": "Type:V=[Users/Actions/Users menu/Integrations menu/Command only/Empty state]; Text:V=[Default/Stacked]"
+   },
+   {
+    "name": "_Command bar navigation icon",
+    "nodeId": "4898:411319",
+    "variants": 2,
+    "props": "Icon swap:I; Type:V=[Icon/Text]"
+   }
+  ],
+  "Content dividers|780:0": [
+   {
+    "name": "Content divider",
+    "nodeId": "1252:126874",
+    "variants": 18,
+    "props": "Type:V=[Heading/Text/Button/Button group icon/Button group/Button icon]; Style:V=[Single line/Dual line/Background fill]"
+   }
+  ],
+  "Date pickers|1143:85678": [
+   {
+    "name": "_Date picker list item",
+    "nodeId": "1150:62",
+    "variants": 6,
+    "props": "Selected:V=[False/True]; State:V=[Default/Hover/Focused]"
+   },
+   {
+    "name": "_Date picker menu",
+    "nodeId": "1150:1925",
+    "variants": 6,
+    "props": "Pre-set ranges:B; Actions:B; Scroll bar:B; Type:V=[Dual dates/Single date/Available times]; Breakpoint:V=[Desktop/Mobile]"
+   },
+   {
+    "name": "Date picker dropdown",
+    "nodeId": "1150:16803",
+    "variants": 24,
+    "props": "Opened:V=[False/True]; Type:V=[Dual dates/Single date/Available times]; State:V=[Placeholder/Active]; Breakpoint:V=[Desktop/Mobile]"
+   },
+   {
+    "name": "Date picker modal",
+    "nodeId": "1547:269867",
+    "variants": 6,
+    "props": "Type:V=[Dual dates/Single date/Available times]; Breakpoint:V=[Desktop/Mobile]"
+   },
+   {
+    "name": "_Calendar cell",
+    "nodeId": "7365:57922",
+    "variants": 12,
+    "props": "Left connector:B; Right connector:B; Active dot:B; Type:V=[Default/Active/Selected/Today's date]; State:V=[Default/Hover/Disabled]"
+   }
+  ],
+  "Empty states|1172:31": [
+   {
+    "name": "Empty state",
+    "nodeId": "1182:317",
+    "variants": 24,
+    "props": "Featured icon:B; Icon:V=[Featured icon/Illustration/File type icon/Folder icon/Folder icon transparent/Users radius/Users row/Integrations]; Size:V=[sm/md/lg]"
+   },
+   {
+    "name": "Illustration",
+    "nodeId": "1182:1085",
+    "variants": 12,
+    "props": "Style:V=[Cloud/Box/Documents/Credit card]; Size:V=[sm/md/lg]"
+   }
+  ],
+  "File upload|1157:90306": [
+   {
+    "name": "_File upload base",
+    "nodeId": "1175:100312",
+    "variants": 3,
+    "props": "File drag and drop:B; State:V=[Default/Hover/Disabled]"
+   },
+   {
+    "name": "_File upload item base",
+    "nodeId": "1175:100366",
+    "variants": 12,
+    "props": "Icon:B; Type:V=[Progress bar/Progress fill]; Icon type:V=[File type/Simple]; State:V=[In progress/Complete/Error]"
+   },
+   {
+    "name": "File upload",
+    "nodeId": "1175:101149",
+    "variants": 8,
+    "props": "Files queued:V=[True/False]; Type:V=[Progress bar/Progress fill]; Breakpoint:V=[Desktop/Mobile]"
+   }
+  ],
+  "Filters|12206:572286": [
+   {
+    "name": "Filters dropdown menu",
+    "nodeId": "12232:366410",
+    "variants": 16,
+    "props": "Dropdown chevron:B; Counter badge:B; State:V=[Default/Hover/Focused/Open empty state/Open inactive filter/Open active filters/Active/Disabled]; Orientation:V=[Right aligned/Left aligned]"
+   },
+   {
+    "name": "Filters slideout menu",
+    "nodeId": "12232:375462",
+    "variants": 6,
+    "props": "State:V=[Empty state/Inactive filter/Active filters]; Breakpoint:V=[Desktop/Mobile]"
+   },
+   {
+    "name": "Filters bar",
+    "nodeId": "12232:376165",
+    "variants": 16,
+    "props": "Type:V=[Simple/Tabs and search/Tabs and date picker/Date filters/Dropdowns/Dropdowns and date picker/Advanced inactive filter/Advanced active filters]; Breakpoint:V=[Desktop/Mobile]"
+   }
+  ],
+  "Inline CTAs|127:2907": [
+   {
+    "name": "Inline CTA",
+    "nodeId": "1255:131915",
+    "variants": 14,
+    "props": "Type:V=[Image/Actions/Email field/Change plan/Upgrade plan/Payment method/Receipt]; Breakpoint:V=[Desktop/Mobile]"
+   }
+  ],
+  "Loading indicators|1172:32": [
+   {
+    "name": "Loading indicator",
+    "nodeId": "1192:610",
+    "variants": 12,
+    "props": "Supporting text:B; Style:V=[Dot circle/Line spinner/Line simple]; Size:V=[md/sm/lg/xl]"
+   }
+  ],
+  "Messaging|1251:12271": [
+   {
+    "name": "Message",
+    "nodeId": "1242:996",
+    "variants": 33,
+    "props": "Reactions:B; Status icon:B; Type:V=[Message/Message reply/File/Audio/Image/Video/Link preview/Link minimal/Writing]; Sent:V=[False/True]; Actions panel:V=[False/True]"
+   },
+   {
+    "name": "_Message reaction",
+    "nodeId": "1244:298",
+    "variants": 2,
+    "props": "Emoji swap:I; Count:V=[False/True]"
+   },
+   {
+    "name": "_Message action button",
+    "nodeId": "9206:591516",
+    "variants": 2,
+    "props": "Icon swap:I; State:V=[Default/Hover]"
+   },
+   {
+    "name": "Message action",
+    "nodeId": "9206:602532",
+    "variants": 3,
+    "props": "Type:V=[Minimal/Textarea input/Advanced]"
+   },
+   {
+    "name": "_Message status icon",
+    "nodeId": "9241:548211",
+    "variants": 6,
+    "props": "Status:V=[Unread/Read/Failed]; State:V=[Default/Hover]"
+   }
+  ],
+  "Metrics|185:279": [
+   {
+    "name": "Metric item",
+    "nodeId": "1560:266217",
+    "variants": 36,
+    "props": "Dropdown icon:B; Featured icon:B; Actions:V=[False/True]; Type:V=[Simple/Icon 01/Icon 02/Icon 03/Icon 04/Chart 01/Chart 02/Chart 03/Chart 04]; Breakpoint:V=[Desktop/Mobile]"
+   },
+   {
+    "name": "_Chart mini",
+    "nodeId": "1561:265493",
+    "variants": 24,
+    "props": "Marker(s):B; Background:B; Type:V=[12 opts: Realistic 01/Realistic 02/Realistic 03/Wavy 01/Wavy 02/Wavy 03...]; Trend:V=[Positive/Negative]"
+   },
+   {
+    "name": "_Change",
+    "nodeId": "1563:260319",
+    "variants": 6,
+    "props": "Type:V=[01/02/03]; Trend:V=[Positive/Negative]"
+   }
+  ],
+  "Modals|172:4293": [
+   {
+    "name": "Modal",
+    "nodeId": "4057:415205",
+    "variants": 102,
+    "props": "Type:V=[51 opts: Stacked left aligned/Horizontal/Warning stacked left aligned/Warning horizontal/Destructive stacked left aligned/Destructive horizontal/...]; Breakpoint:V=[Desktop/Mobile]"
+   },
+   {
+    "name": "_Modal actions",
+    "nodeId": "4057:414352",
+    "variants": 18,
+    "props": "Checkbox:B; Tertiary button:B; Divider:B; Type:V=[Horizontal fill container/Vertical fill container/Horizontal right aligned (checkbox)]; Destructive:V=[False/True]; Breakpoint:V=[Desktop/Mobile vertical aligned/Mobile horizontal aligned]"
+   },
+   {
+    "name": "_Modal header",
+    "nodeId": "4055:413620",
+    "variants": 6,
+    "props": "X close button:B; Featured icon:B; Padding bottom:B; Divider:B; Type:V=[Left aligned/Center aligned/Horizontal left aligned]; Breakpoint:V=[Desktop/Mobile]"
+   }
+  ],
+  "Page headers|185:2718": [
+   {
+    "name": "Page header",
+    "nodeId": "1239:122640",
+    "variants": 12,
+    "props": "Breadcrumbs:B; Supporting text:B; Actions:B; Search:B; Divider:B; Style:V=[Simple/Avatar/Banner avatar/Banner simple/Banner avatar centered/Banner simple centered]; Breakpoint:V=[Desktop/Mobile]"
+   }
+  ],
+  "Pagination|225:7288": [
+   {
+    "name": "_Pagination dot indicator",
+    "nodeId": "1111:1",
+    "variants": 8,
+    "props": "Current:V=[False/True]; Style:V=[Dot/Line]; Size:V=[md/lg]"
+   },
+   {
+    "name": "Pagination dot group",
+    "nodeId": "1111:38",
+    "variants": 8,
+    "props": "Size:V=[md/lg]; Style:V=[Dot/Line]; Framed:V=[True/False]"
+   },
+   {
+    "name": "_Pagination number base",
+    "nodeId": "1114:68174",
+    "variants": 6,
+    "props": "Shape:V=[Circle/Square]; State:V=[Default/Hover/active/Focused]"
+   },
+   {
+    "name": "_Pagination button group base",
+    "nodeId": "1114:68857",
+    "variants": 12,
+    "props": "Icon leading:I; Icon trailing:I; Icon:B; Type:V=[Number/Leading icon/Trailing icon/Icon only]; State:V=[Default/Active/hover/Focused]"
+   },
+   {
+    "name": "Pagination",
+    "nodeId": "1115:68622",
+    "variants": 26,
+    "props": "Select (dropdown):B; Type:V=[Page default/Page minimal center aligned/Card default/Card minimal right aligned/Card minimal left aligned/Card button group right aligned/Card button group left aligned/Card minimal center aligned/Card advanced/Card advanced center aligned]; Shape:V=[Square/Circle]; Breakpoint:V=[Desktop/Mobile]"
+   },
+   {
+    "name": "_Carousel arrow",
+    "nodeId": "1253:164",
+    "variants": 4,
+    "props": "Size:V=[md/lg]; Chevron:V=[Left/Right]"
+   },
+   {
+    "name": "Carousel image",
+    "nodeId": "1253:237",
+    "variants": 2,
+    "props": "Size:V=[md/lg]"
+   }
+  ],
+  "Progress steps|53:1288": [
+   {
+    "name": "_Step icon base",
+    "nodeId": "1138:23",
+    "variants": 12,
+    "props": "Type:V=[Check/Number]; Status:V=[Incomplete/Current/Complete]; Size:V=[sm/md]"
+   },
+   {
+    "name": "_Step base",
+    "nodeId": "1138:1954",
+    "variants": 42,
+    "props": "Connector:B; Type:V=[Icon left/Icon top/Number left/Number top/Featured icon left/Featured icon top/Text line]; Status:V=[Incomplete/Current/Complete]; Size:V=[sm/md]"
+   },
+   {
+    "name": "Progress steps / Progress minimal icons connected",
+    "nodeId": "1139:79128",
+    "variants": 8,
+    "props": "Size:V=[sm/md]; Type:V=[Check/Number]; Breakpoint:V=[Desktop/Mobile]"
+   },
+   {
+    "name": "Progress steps / Progress minimal icons",
+    "nodeId": "1139:79149",
+    "variants": 8,
+    "props": "Text:B; Size:V=[sm/md]; Type:V=[Check/Number]; Breakpoint:V=[Desktop/Mobile]"
+   },
+   {
+    "name": "Progress steps / Progress text with line",
+    "nodeId": "1139:79465",
+    "variants": 4,
+    "props": "Size:V=[sm/md]; Breakpoint:V=[Mobile/Desktop]"
+   },
+   {
+    "name": "Progress steps / Progress icons centered",
+    "nodeId": "1141:76669",
+    "variants": 12,
+    "props": "4th step:B; Size:V=[sm/md]; Type:V=[Icon/Number/Featured icon]; Breakpoint:V=[Desktop/Mobile]"
+   },
+   {
+    "name": "Progress steps / Progress icons with text",
+    "nodeId": "1254:144290",
+    "variants": 6,
+    "props": "Size:V=[sm/md]; Type:V=[Icon/Number/Icon featured]"
+   }
+  ],
+  "Section footers|3275:371793": [
+   {
+    "name": "Section footer",
+    "nodeId": "3275:372571",
+    "variants": 8,
+    "props": "Secondary button:B; Actions:B; Divider:B; Type:V=[Section/Card]; Button group:V=[True/False]; Breakpoint:V=[Desktop/Mobile]"
+   }
+  ],
+  "Section headers|190:4871": [
+   {
+    "name": "Section header",
+    "nodeId": "1214:38",
+    "variants": 12,
+    "props": "Dropdown icon:B; Supporting text:B; Actions:B; Divider:B; Tabs:V=[False/True]; Type:V=[Buttons/Search/Button group]; Breakpoint:V=[Desktop/Mobile]"
+   },
+   {
+    "name": "Section label",
+    "nodeId": "5013:376534",
+    "variants": 4,
+    "props": "Required *:B; Supporting text:B; Help icon:B; Size:V=[sm/md]; Actions:V=[False/True]"
+   }
+  ],
+  "Slideout menus|231:922": [
+   {
+    "name": "_Slide out menu header",
+    "nodeId": "1239:120673",
+    "variants": 4,
+    "props": "Icon:B; Supporting text:B; Tabs:V=[False/True]; Breakpoint:V=[Desktop/Mobile]"
+   },
+   {
+    "name": "Slide out menu",
+    "nodeId": "1240:137582",
+    "variants": 46,
+    "props": "Type:V=[23 opts: Placeholder/User profile/Messages/Message chat/Payment method/Payment details/...]; Breakpoint:V=[Desktop/Mobile]"
+   }
+  ],
+  "Tables|214:0": [
+   {
+    "name": "_Table header label",
+    "nodeId": "1221:106788",
+    "variants": 16,
+    "props": "Help icon:V=[False/True]; Arrow:V=[False/Chevron selector/Down/Up]; State:V=[Default/Hover]"
+   },
+   {
+    "name": "Table header cell",
+    "nodeId": "1221:107933",
+    "variants": 6,
+    "props": "Size:V=[sm/md]; Text:V=[False/True]; Checkbox:V=[False/True]"
+   },
+   {
+    "name": "Table cell",
+    "nodeId": "1222:107305",
+    "variants": 60,
+    "props": "Lead action:B; Supporting text:B; Lead text:B; Type:V=[15 opts: Text/Avatar/File type icon/Payment method/Badge/Badges multiple/...]; Size:V=[sm/md]; State:V=[Default/Hover/selected]"
+   },
+   {
+    "name": "Table",
+    "nodeId": "1227:110587",
+    "variants": 16,
+    "props": "Example:V=[Team members/Companies/Sales/Files]; Breakpoint:V=[Desktop/Mobile]; Dividers:V=[Divider line/Alternating fills]"
+   },
+   {
+    "name": "Table cell lead action",
+    "nodeId": "9400:570197",
+    "variants": 3,
+    "props": "Type:V=[Checkbox/Radio/Toggle]"
+   }
+  ],
+  "Tabs|43:0": [
+   {
+    "name": "_Tab button base",
+    "nodeId": "43:2412",
+    "variants": 72,
+    "props": "Badge:B; Icon:B; Icon:I; Current:V=[False/True]; Size:V=[sm/md]; Type:V=[Button brand/Button gray/Underline/Line (vertical tabs)/Button white/Button minimal]; State:V=[Default/Hover/Focus]"
+   },
+   {
+    "name": "Horizontal tabs",
+    "nodeId": "1118:69893",
+    "variants": 40,
+    "props": "Type:V=[Button brand/Button gray/Underline/Button border/Button minimal]; Size:V=[sm/md]; Full width:V=[False/True]; Breakpoint:V=[Desktop/Mobile]"
+   },
+   {
+    "name": "Vertical tabs",
+    "nodeId": "1397:9880",
+    "variants": 20,
+    "props": "Type:V=[Button primary/Button gray/Line/Button border/Button minimal]; Size:V=[sm/md]; Breakpoint:V=[Desktop/Mobile]"
+   }
+  ],
+  "Tree views|12206:573377": [
+   {
+    "name": "_Tree view connector",
+    "nodeId": "12450:557109",
+    "variants": 6,
+    "props": "Size:V=[sm/md]; Type:V=[Default/End connector/None]"
+   },
+   {
+    "name": "_Tree view item",
+    "nodeId": "12450:557173",
+    "variants": 16,
+    "props": "Icon:B; Checkbox:B; Drag handle:B; Level 3:B; Level 4:B; Level 2:B; Chevron:B; Size:V=[sm/md]; State:V=[Default/Hover]; Open:V=[False/True]; Selected:V=[False/True]"
+   },
+   {
+    "name": "Tree view",
+    "nodeId": "12451:566966",
+    "variants": 4,
+    "props": "Type:V=[Simple/Advanced]; Size:V=[sm/md]"
+   }
+  ]
+ },
+ "mkt": {
+  "Blog sections|665:1107": [
+   {
+    "name": "Blog post card",
+    "nodeId": "1390:58",
+    "variants": 32,
+    "props": "Type:V(8);Orientation:V(2);Breakpoint:V(2)"
+   },
+   {
+    "name": "Blog subscribe card",
+    "nodeId": "1391:213014",
+    "variants": 4,
+    "props": "Breakpoint:V(2);Type:V(2)"
+   },
+   {
+    "name": "Blog page header",
+    "nodeId": "1398:3259",
+    "variants": 32,
+    "props": "Type:V(16);Breakpoint:V(2)"
+   },
+   {
+    "name": "Blog section",
+    "nodeId": "1398:5920",
+    "variants": 16,
+    "props": "Type:V(8);Breakpoint:V(2)"
+   }
+  ],
+  "Careers|1458:239246": [
+   {
+    "name": "_Job post",
+    "nodeId": "1506:244681",
+    "variants": 6,
+    "props": "Details:B;Supporting text:B;Badge:B;Type:V(3);Breakpoint:V(2)"
+   },
+   {
+    "name": "Careers section",
+    "nodeId": "1507:252424",
+    "variants": 24,
+    "props": "Type:V(8);Theme:V(2);Breakpoint:V(2)"
+   }
+  ],
+  "Contact sections|673:20368": [
+   {
+    "name": "_Map location marker",
+    "nodeId": "1438:264957",
+    "variants": 2,
+    "props": "Country icon:B;State:V(2)"
+   },
+   {
+    "name": "Contact sections",
+    "nodeId": "1438:267698",
+    "variants": 56,
+    "props": "Type:V(20);Theme:V(2);Breakpoint:V(2)"
+   },
+   {
+    "name": "Contact page header",
+    "nodeId": "1457:244929",
+    "variants": 16,
+    "props": "Type:V(8);Breakpoint:V(2)"
+   },
+   {
+    "name": "_Contact text",
+    "nodeId": "1437:3",
+    "variants": 22,
+    "props": "Action:B;Type:V(11);Breakpoint:V(2)"
+   }
+  ],
+  "Content|647:15097": [
+   {
+    "name": "Blog post page header",
+    "nodeId": "1429:223090",
+    "variants": 24,
+    "props": "Type:V(12);Breakpoint:V(2)"
+   },
+   {
+    "name": "Content section",
+    "nodeId": "1431:222569",
+    "variants": 20,
+    "props": "Type:V(10);Breakpoint:V(2)"
+   },
+   {
+    "name": "Content item",
+    "nodeId": "3947:417447",
+    "variants": 58,
+    "props": "Padding top/bottom, Spacing guide, Caption, Caption icon, Divider, Avatar group, Attribution:B;Type:V(9);Size:V(6);Breakpoint:V(2)"
+   }
+  ],
+  "CTA sections|645:15070": [
+   {
+    "name": "CTA section",
+    "nodeId": "1365:198734",
+    "variants": 60,
+    "props": "Type:V(23);Theme:V(2);Breakpoint:V(2)"
+   }
+  ],
+  "FAQ sections|282:168": [
+   {
+    "name": "_FAQ item",
+    "nodeId": "1358:191490",
+    "variants": 16,
+    "props": "Icon:B;Expanded:V(2);Divider:V(2);Breakpoint:V(2);Icon position:V(2)"
+   },
+   {
+    "name": "FAQ section",
+    "nodeId": "1360:3728",
+    "variants": 32,
+    "props": "Type:V(8);Theme:V(2);Breakpoint:V(2)"
+   }
+  ],
+  "Footers|278:13503": [
+   {
+    "name": "_Footer links column",
+    "nodeId": "3288:570969",
+    "variants": 3,
+    "props": "Heading:B;Color:V(2);Theme:V(2)"
+   },
+   {
+    "name": "Footer",
+    "nodeId": "1517:334473",
+    "variants": 80,
+    "props": "Type:V(20);Theme:V(2);Breakpoint:V(2)"
+   },
+   {
+    "name": "_Footer link",
+    "nodeId": "3288:570928",
+    "variants": 12,
+    "props": "Badge:V(2);Color:V(2);Theme:V(2);State:V(2)"
+   }
+  ],
+  "Header navigation|683:17952": [
+   {
+    "name": "_Dropdown header navigation trigger",
+    "nodeId": "1288:189",
+    "variants": 14,
+    "props": "Open:V(2);Type:V(7)"
+   },
+   {
+    "name": "_Nav menu item card",
+    "nodeId": "1282:58",
+    "variants": 24,
+    "props": "Actions:B;Type:V(3);Stacked:V(2);State:V(2);Breakpoint:V(2)"
+   },
+   {
+    "name": "_Nav menu item",
+    "nodeId": "1280:1541",
+    "variants": 8,
+    "props": "Badge:B;Supporting text:B;Actions:B;Icon swap:I;Icon:B;State:V(2);Breakpoint:V(2);Icon type:V(2)"
+   },
+   {
+    "name": "_Nav menu item dropdown",
+    "nodeId": "1288:10109",
+    "variants": 16,
+    "props": "Icon swap:I;Icon:B;Open:V(2);State:V(2);Breakpoint:V(2);Icon type:V(2)"
+   },
+   {
+    "name": "Dropdown header navigation",
+    "nodeId": "1288:26576",
+    "variants": 60,
+    "props": "Open:V(2);Mobile subnav open:V(2);Type:V(10);Breakpoint:V(2)"
+   },
+   {
+    "name": "_Nav actions",
+    "nodeId": "1624:264720",
+    "variants": 4,
+    "props": "Logged in:V(2);Breakpoint:V(2)"
+   },
+   {
+    "name": "_Nav menu button",
+    "nodeId": "1288:20",
+    "variants": 6,
+    "props": "Opened:V(2);State:V(3)"
+   },
+   {
+    "name": "Full-width header navigation",
+    "nodeId": "1287:2392",
+    "variants": 60,
+    "props": "Open:V(2);Mobile subnav open:V(2);Type:V(10);Breakpoint:V(2)"
+   },
+   {
+    "name": "_Dropdown header navigation button",
+    "nodeId": "9175:550142",
+    "variants": 6,
+    "props": "Icon:B;Open:V(2);State:V(3)"
+   }
+  ],
+  "Header sections|739:496": [
+   {
+    "name": "Hero header section",
+    "nodeId": "1316:3622",
+    "variants": 88,
+    "props": "Type:V(44);Breakpoint:V(2)"
+   },
+   {
+    "name": "Header section",
+    "nodeId": "1322:1923",
+    "variants": 60,
+    "props": "Alignment:V(3);Actions:V(5);Color:V(2);Breakpoint:V(2)"
+   }
+  ],
+  "Features sections|736:22481": [
+   {
+    "name": "_Feature text",
+    "nodeId": "1327:180772",
+    "variants": 30,
+    "props": "Action:B;Logo swap:I;Icon swap:I;Type:V(15);Breakpoint:V(2)"
+   },
+   {
+    "name": "Features section",
+    "nodeId": "1344:104",
+    "variants": 92,
+    "props": "Type:V(42);Theme:V(2);Breakpoint:V(2)"
+   },
+   {
+    "name": "_Feature tab",
+    "nodeId": "3285:387130",
+    "variants": 8,
+    "props": "Action:B;Current:V(2);Orientation:V(2);Breakpoint:V(2)"
+   }
+  ],
+  "Metrics sections|291:164": [
+   {
+    "name": "_Metric item",
+    "nodeId": "1369:659",
+    "variants": 10,
+    "props": "Action:B;Supporting text:B;Type:V(5);Breakpoint:V(2)"
+   },
+   {
+    "name": "Metrics section",
+    "nodeId": "1369:702",
+    "variants": 32,
+    "props": "Type:V(11);Theme:V(2);Breakpoint:V(2)"
+   }
+  ],
+  "Newsletter CTA sections|641:15058": [
+   {
+    "name": "Newsletter CTA section",
+    "nodeId": "1365:208633",
+    "variants": 32,
+    "props": "Type:V(12);Theme:V(2);Breakpoint:V(2)"
+   }
+  ],
+  "Pricing sections|708:20673": [
+   {
+    "name": "_Pricing table cell header",
+    "nodeId": "1346:182342",
+    "variants": 4,
+    "props": "Help icon:B;Type:V(2);Breakpoint:V(2)"
+   },
+   {
+    "name": "_Pricing table cell",
+    "nodeId": "1354:1721",
+    "variants": 20,
+    "props": "Text:V(2);Icon:V(3);Alignment:V(2);Breakpoint:V(2)"
+   },
+   {
+    "name": "_Pricing tier card",
+    "nodeId": "1346:182709",
+    "variants": 20,
+    "props": "Type:V(10);Breakpoint:V(2)"
+   },
+   {
+    "name": "Pricing page header",
+    "nodeId": "1393:7528",
+    "variants": 28,
+    "props": "Type:V(14);Breakpoint:V(2)"
+   },
+   {
+    "name": "Pricing section",
+    "nodeId": "1394:207156",
+    "variants": 16,
+    "props": "Type:V(8);Breakpoint:V(2)"
+   }
+  ],
+  "Social proof sections|286:15521": [
+   {
+    "name": "Social proof section",
+    "nodeId": "1294:161217",
+    "variants": 20,
+    "props": "Type:V(5);Theme:V(2);Breakpoint:V(2)"
+   },
+   {
+    "name": "Press mentions section",
+    "nodeId": "1345:564",
+    "variants": 4,
+    "props": "Theme:V(2);Breakpoint:V(2)"
+   }
+  ],
+  "Team sections|673:16258": [
+   {
+    "name": "Team section",
+    "nodeId": "1497:249247",
+    "variants": 28,
+    "props": "Type:V(14);Breakpoint:V(2)"
+   },
+   {
+    "name": "_Team member",
+    "nodeId": "1458:240598",
+    "variants": 14,
+    "props": "Social icons:B;Supporting text:B;Type:V(7);Breakpoint:V(2)"
+   }
+  ],
+  "Testimonial sections|648:16272": [
+   {
+    "name": "_Testiomonial carousel arrow",
+    "nodeId": "1374:440",
+    "variants": 24,
+    "props": "Size:V(2);Arrow:V(2);Type:V(3);State:V(2)"
+   },
+   {
+    "name": "_Quote image bottom panel",
+    "nodeId": "1376:1163",
+    "variants": 16,
+    "props": "Size:V(2);Type:V(2);Quote:V(2);Breakpoint:V(2)"
+   },
+   {
+    "name": "Testimonial section",
+    "nodeId": "1377:11884",
+    "variants": 52,
+    "props": "Type:V(17);Theme:V(2);Breakpoint:V(2)"
+   }
+  ]
+ }
+}
